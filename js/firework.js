@@ -1,16 +1,16 @@
-const max_fireworks = 8,
-  max_sparks = 50;
+const maxFirework = 10,
+  maxSparks = 60;
 let canvas = document.getElementById('myCanvas');
 let context = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let fireworks = [];
  
-for (let i = 0; i < max_fireworks; i++) {
+for (let i = 0; i < maxFirework; i++) {
   let firework = {
     sparks: []
   };
-  for (let n = 0; n < max_sparks; n++) {
+  for (let n = 0; n < maxSparks; n++) {
     let spark = {
       vx: Math.random() * 5 + .5,
       vy: Math.random() * 5 + .5,
