@@ -2,6 +2,10 @@ body {
   background: #000;
 }
 
+/* #image-background {
+  display: none;
+} */
+
 #app .title,
 #app .input,
 #app .btn {

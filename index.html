@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy new year</title>
-    <link rel="stylesheet" href="./assets/styles.css">
-    <link rel="stylesheet" href="./assets/responsive.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+  </head>
+  <body>
     <div id="app">
-        <div class="title">
-            <h2>Điền tên của bạn</h2>
-        </div>
-        <div class="input">
-            <input type="text" id="name" />
-        </div>
-        <div class="btn">
-            <button onclick="submit()" id="btn-submit">Next</button>
-        </div>
+      <div class="title">
+        <h2>Điền tên của bạn</h2>
+      </div>
+      <div class="input">
+        <input type="text" id="name" />
+      </div>
+      <div class="btn">
+        <button onclick="submit()" id="btn-submit">Next</button>
+      </div>
     </div>
+    <!-- <img
+      src="./assets/images/background.jpg"
+      alt="background"
+      id="image-background"
+    /> -->
     <canvas class="off" id="myCanvas" width="100%"></canvas>
     <script src="./js/firework.js"></script>
     <script src="./js/inputName.js"></script>
     <script>
-        window.addEventListener('keydown', (e) => {
-            if (e.keyCode == 13 || e.code == "Enter") {
-                submit();
-            }
-        });
+      window.addEventListener("keydown", (e) => {
+        if (e.keyCode == 13 || e.code == "Enter") {
+          submit();
+        }
+      });
     </script>
   </body>
 </html>
